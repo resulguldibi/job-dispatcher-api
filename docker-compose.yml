@@ -1,0 +1,45 @@
+version: '3.1'
+
+services:
+    zookeeper:
+        image: zookeeper
+        container_name: zookeeper
+        restart: always
+        ports:
+            - 2181:2181
+    kafka:
+        image: wurstmeister/kafka
+        container_name: kafka
+        depends_on:
+            - zookeeper
+        links:
+            - zookeeper
+        restart: always
+        ports:
+            - 9092:9092
+        environment:
+            KAFKA_BROKER_ID: 1
+            KAFKA_ADVERTISED_HOST_NAME: 192.168.32.1
+            KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    job-dispatcher-api:
+        image: resulguldibi/job-dispatcher-api
+        container_name: job-dispatcher-api
+        restart: always
+        depends_on:
+            - kafka
+            - cassandra
+        links:
+            - kafka  
+            - cassandra
+        ports:
+            - 8080:8080            
+    cassandra:
+        image: cassandra
+        container_name: cassandra
+        restart: always
+        ports:
+            - 9042:9042
+        environment:
+            CASSANDRA_CLUSTER_NAME: my_cluster
+            CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+            CASSANDRA_DC: my_datacenter

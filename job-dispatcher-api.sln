@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "job-dispatcher-api", "job-dispatcher-api\job-dispatcher-api.csproj", "{1D82DF5E-DB42-42F7-B5DA-B31A89903143}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client.kafka", "client.kafka\client.kafka.csproj", "{6E28A96E-7D7E-4F11-8C19-41F1AC91BE7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client.socket", "client.socket\client.socket.csproj", "{DF69B7F8-45C7-4445-94CE-2001AFF44EEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "job-dispatcher", "job-dispatcher\job-dispatcher.csproj", "{98953A68-8B91-4C04-B7D2-14B65E0AA4D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "client.cassandra", "client.cassandra\client.cassandra.csproj", "{85C2C42B-032B-4CDF-BB32-0CA503BA9E9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D82DF5E-DB42-42F7-B5DA-B31A89903143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D82DF5E-DB42-42F7-B5DA-B31A89903143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D82DF5E-DB42-42F7-B5DA-B31A89903143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D82DF5E-DB42-42F7-B5DA-B31A89903143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E28A96E-7D7E-4F11-8C19-41F1AC91BE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E28A96E-7D7E-4F11-8C19-41F1AC91BE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E28A96E-7D7E-4F11-8C19-41F1AC91BE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E28A96E-7D7E-4F11-8C19-41F1AC91BE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF69B7F8-45C7-4445-94CE-2001AFF44EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF69B7F8-45C7-4445-94CE-2001AFF44EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF69B7F8-45C7-4445-94CE-2001AFF44EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF69B7F8-45C7-4445-94CE-2001AFF44EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98953A68-8B91-4C04-B7D2-14B65E0AA4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98953A68-8B91-4C04-B7D2-14B65E0AA4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98953A68-8B91-4C04-B7D2-14B65E0AA4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98953A68-8B91-4C04-B7D2-14B65E0AA4D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85C2C42B-032B-4CDF-BB32-0CA503BA9E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85C2C42B-032B-4CDF-BB32-0CA503BA9E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85C2C42B-032B-4CDF-BB32-0CA503BA9E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85C2C42B-032B-4CDF-BB32-0CA503BA9E9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FFE2D28-9105-4DAB-A116-B5DE0AFB2C66}
+	EndGlobalSection
+EndGlobal
